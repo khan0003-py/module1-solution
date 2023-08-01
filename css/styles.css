@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: justify;
+}
+
+.section {
+    box-sizing: border-box;
+    width: 32%;
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #000;
+}
+
+.section-title {
+    position: relative;
+    background-color: #ff9800; /* Change the color as per your choice */
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 125%; /* You can adjust the font size as per your preference */
+    margin: 0;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 991px) {
+    .section {
+        width: 48%;
+    }
+    .section:nth-child(3) {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .section {
+        width: 100%;
+    }
+}
